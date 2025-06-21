@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DE BEST BRAIN SCHOOL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎓</span>
+                <div>
+                    <h3>DE BEST BRAIN SCHOOL</h3>
+                    <p>In God We Trust</p>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="classes.html" class="nav-link">Classes</a>
+                <a href="enrollment.html" class="nav-link">Enrollment</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us - we'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-info-section">
+                <h2>Get In Touch</h2>
+                <p>Have questions about our school, enrollment process, or would like to schedule a visit? We're here to help! Contact us using any of the methods below or fill out our contact form.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>No.5 Animashaun Street<br>Abeokuta, Ogun State</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>Phone: 0913 184 8867<br>Fax: 0812 645 0036</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>info@debest<br>brainschool.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 4:00 PM<br>Saturday: 9:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="enrollment">Enrollment Information</option>
+                            <option value="visit">Schedule a Visit</option>
+                            <option value="academics">Academic Programs</option>
+                            <option value="tuition">Tuition and Fees</option>
+                            <option value="events">School Events</option>
+                            <option value="general">General Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Please tell us how we can help you..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredContact">Preferred Contact Method</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="preferredContact" value="email" checked>
+                                Email
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="preferredContact" value="phone">
+                                Phone
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="preferredContact" value="either">
+                                Either
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            I would like to receive school newsletters and updates
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <!-- School Map Section -->
+            <div class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                  <iframe
+            src="https://www.google.com/maps?q=No.5+Animashaun+Street,+Abeokuta,+Ogun+State&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+                </div>
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <p><strong>From Iyana Mortuary:</strong> Take Highway 45 North for 5 miles, exit at Education Boulevard, turn right and follow for 2 miles.</p>
+                    <p><strong>From Lantoro:</strong> Take I-75 South for 8 miles, merge onto Highway 45 North, exit at Education Boulevard.</p>
+                    <p><strong>From Oke-Ilewo:</strong> Head west on Oke-Ilewo Road, turn left onto Education Boulevard, continue for 3 miles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎓</span>
+                        <div>
+                            <h3>DE BEST BRAIN SCHOOL</h3>
+                            <p>In God We Trust</p>
+                        </div>
+                    </div>
+                    <p>Providing excellence in education with a foundation built on faith, knowledge, and character development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📍 No.5 Animashaun Street, Abeokuta, Ogun State</p>
+                        <p>📞 0913 184 8867</p>
+                        <p>✉️ info@debestbrainschool.edu</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="classes.html">Our Classes</a>
+                        <a href="enrollment.html">Enrollment</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 DE BEST BRAIN SCHOOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

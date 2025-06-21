@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment - DE BEST BRAIN SCHOOL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎓</span>
+                <div>
+                    <h3>DE BEST BRAIN SCHOOL</h3>
+                    <p>In God We Trust</p>
+                </div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="classes.html" class="nav-link">Classes</a>
+                <a href="enrollment.html" class="nav-link active">Enrollment</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Student Enrollment</h1>
+            <p>Join our school family and give your child the best education</p>
+        </div>
+    </section>
+
+    <!-- Enrollment Content -->
+    <section class="enrollment-content">
+        <div class="container">
+            <div class="enrollment-info">
+                <h2>Enrollment Information</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>💰 Tuition & Fees</h3>
+                        <p><strong>Kindergarten 1-2:</strong> #25,000/per term</p>
+                        <p><strong>Nursery 1-2</strong> #30,000/per term</p>
+                        <p><strong>Primary 1-6</strong> #35,000/per term</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📋 Required Documents</h3>
+                        <p>• Birth Certificate</p>
+                        <p>• Immunization Records</p>
+                        <p>• Previous School Transcripts</p>
+                        <p>• Pastor's Recommendation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enrollment Form -->
+            <div class="enrollment-form-section">
+                <h2>Enrollment Application Form</h2>
+                <form id="enrollmentForm" class="enrollment-form">
+                    <div class="form-section">
+                        <h3>Student Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentFirstName">First Name *</label>
+                                <input type="text" id="studentFirstName" name="studentFirstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentLastName">Last Name *</label>
+                                <input type="text" id="studentLastName" name="studentLastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth *</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="grade">Grade Applying For *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="kindergarten">Kindergarten</option>
+                                    <option value="1st">Nursery 1</option>
+                                    <option value="2nd">Nursery 2</option>
+                                    <option value="3rd">Primary 1</option>
+                                    <option value="4th">Primary 2</option>
+                                    <option value="5th">Primary 3</option>
+                                    <option value="6th">Primary 4</option>
+                                    <option value="7th">Primary 5</option>
+                                    <option value="8th">Primary 6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="previousSchool">Previous School</label>
+                            <input type="text" id="previousSchool" name="previousSchool">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Parent/Guardian Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentFirstName">Parent/Guardian First Name *</label>
+                                <input type="text" id="parentFirstName" name="parentFirstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parentLastName">Parent/Guardian Last Name *</label>
+                                <input type="text" id="parentLastName" name="parentLastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Home Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="church">Church Affiliation</label>
+                            <input type="text" id="church" name="church">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="specialNeeds">Special Needs or Accommodations</label>
+                            <textarea id="specialNeeds" name="specialNeeds" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Student's Interests and Hobbies</label>
+                            <textarea id="interests" name="interests" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Why do you want to enroll at DE BEST BRAIN SCHOOL?</label>
+                            <textarea id="reason" name="reason" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                I agree to the school's policies and Christian values *
+                            </label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                I would like to receive school newsletters and updates
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎓</span>
+                        <div>
+                            <h3>DE BEST BRAIN SCHOOL</h3>
+                            <p>In God We Trust</p>
+                        </div>
+                    </div>
+                    <p>Providing excellence in education with a foundation built on faith, knowledge, and character development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p>📍 123 Education Street, Learning City, LC 12345</p>
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ info@debestbrainschool.edu</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="classes.html">Our Classes</a>
+                        <a href="enrollment.html">Enrollment</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 DE BEST BRAIN SCHOOL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
